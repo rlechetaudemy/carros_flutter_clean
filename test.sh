@@ -1,0 +1,1 @@
+flutter test test --machine | tojunit --output tests.xml

@@ -1,0 +1,10 @@
+{
+  "id": 1,
+  "nome": "Tucker 1948",
+  "tipo": "classicos",
+  "descricao": "Desc Tucker 1948",
+  "urlFoto": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/classicos/Tucker.png",
+  "urlVideo": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/classicos/tucker.mp4",
+  "latitude": "-23.564224",
+  "longitude": "-46.653156"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "flutter_carros",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://bitbucket.org/livetouchdev/flutter_carros/",
+  "author": "rlechetalive <rlecheta@livetouch.com.br>",
+  "license": "MIT",
+  "dependencies": {
+    "lcov2badge": "^0.1.2"
+  }
+}

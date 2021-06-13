@@ -1,0 +1,302 @@
+[
+  {
+    "id": 12241,
+    "nome": "Tucker 1948",
+    "tipo": "classicos",
+    "descricao": "Desc Tucker 1948",
+    "urlFoto": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/classicos/Tucker.png",
+    "urlVideo": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/classicos/tucker.mp4",
+    "latitude": "-23.564224",
+    "longitude": "-46.653156"
+  },
+  {
+    "id": 12251,
+    "nome": "Chevrolet Corvette",
+    "tipo": "classicos",
+    "descricao": "Desc Chevrolet Corvette",
+    "urlFoto": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/classicos/Chevrolet_Corvette.png",
+    "urlVideo": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/classicos/corvette.mp4",
+    "latitude": "-23.564224",
+    "longitude": "-46.653156"
+  },
+  {
+    "id": 12261,
+    "nome": "Chevrolet Impala Coupe",
+    "tipo": "classicos",
+    "descricao": "Desc Chevrolet Impala Coupe",
+    "urlFoto": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/classicos/Chevrolet_Impala_Coupe.png",
+    "urlVideo": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/classicos/chevrolet_impala.mp4",
+    "latitude": "-23.564224",
+    "longitude": "-46.653156"
+  },
+  {
+    "id": 12271,
+    "nome": "Cadillac Deville Convertible",
+    "tipo": "classicos",
+    "descricao": "Desc Cadillac Deville Convertible",
+    "urlFoto": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/classicos/Cadillac_Deville_Convertible.png",
+    "urlVideo": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/classicos/cadillac_deville.mp4",
+    "latitude": "-23.564224",
+    "longitude": "-46.653156"
+  },
+  {
+    "id": 12281,
+    "nome": "Chevrolet Bel-Air",
+    "tipo": "classicos",
+    "descricao": "Desc Chevrolet Bel-Air",
+    "urlFoto": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/classicos/Chevrolet_BelAir.png",
+    "urlVideo": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/classicos/chevrolet_bel_air.mp4",
+    "latitude": "-23.564224",
+    "longitude": "-46.653156"
+  },
+  {
+    "id": 12291,
+    "nome": "Cadillac Eldorado",
+    "tipo": "classicos",
+    "descricao": "Desc Cadillac Eldorado",
+    "urlFoto": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/classicos/Cadillac_Eldorado.png",
+    "urlVideo": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/classicos/cadillac_eldorado.mp4",
+    "latitude": "-23.564224",
+    "longitude": "-46.653156"
+  },
+  {
+    "id": 12301,
+    "nome": "Ferrari 250 GTO",
+    "tipo": "classicos",
+    "descricao": "Desc Ferrari 250 GTO",
+    "urlFoto": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/classicos/Ferrari_250_GTO.png",
+    "urlVideo": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/classicos/ferrari_gto.mp4",
+    "latitude": "-23.564224",
+    "longitude": "-46.653156"
+  },
+  {
+    "id": 12311,
+    "nome": "Dodge Challenger",
+    "tipo": "classicos",
+    "descricao": "Desc Dodge Challenger",
+    "urlFoto": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/classicos/Dodge_Challenger.png",
+    "urlVideo": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/classicos/dodge_challenger.mp4",
+    "latitude": "",
+    "longitude": ""
+  },
+  {
+    "id": 12321,
+    "nome": "Camaro SS 1969",
+    "tipo": "classicos",
+    "descricao": "Desc Camaro SS 1969",
+    "urlFoto": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/classicos/Camaro_SS.png",
+    "urlVideo": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/classicos/camaro_ss.mp4",
+    "latitude": "-23.564224",
+    "longitude": "-46.653156"
+  },
+  {
+    "id": 12331,
+    "nome": "Ford Mustang 1976",
+    "tipo": "classicos",
+    "descricao": "Desc Ford Mustang 1976",
+    "urlFoto": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/classicos/Ford_Mustang.png",
+    "urlVideo": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/classicos/ford_mustang.mp4",
+    "latitude": "-23.564224",
+    "longitude": "-46.653156"
+  },
+  {
+    "id": 12341,
+    "nome": "Ferrari FF",
+    "tipo": "esportivos",
+    "descricao": "Desc Ferrari FF",
+    "urlFoto": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/esportivos/Ferrari_FF.png",
+    "urlVideo": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/esportivos/ferrari_ff.mp4",
+    "latitude": "44.532218",
+    "longitude": "10.864019"
+  },
+  {
+    "id": 12351,
+    "nome": "AUDI GT Spyder",
+    "tipo": "esportivos",
+    "descricao": "Desc AUDI GT Spyder",
+    "urlFoto": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/esportivos/Audi_Spyder.png",
+    "urlVideo": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/esportivos/audi_gt.mp4",
+    "latitude": "-23.564224",
+    "longitude": "-46.653156"
+  },
+  {
+    "id": 12361,
+    "nome": "Porsche Panamera",
+    "tipo": "esportivos",
+    "descricao": "Desc Porsche Panamera",
+    "urlFoto": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/esportivos/Porsche_Panamera.png",
+    "urlVideo": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/esportivos/porsche_panamera.mp4",
+    "latitude": "-23.564224",
+    "longitude": "-46.653156"
+  },
+  {
+    "id": 12371,
+    "nome": "Lamborghini Aventador",
+    "tipo": "esportivos",
+    "descricao": "Desc Lamborghini Aventador",
+    "urlFoto": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/esportivos/Lamborghini_Aventador.png",
+    "urlVideo": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/esportivos/lamborghini_aventador.mp4",
+    "latitude": "-23.564224",
+    "longitude": "-46.653156"
+  },
+  {
+    "id": 12381,
+    "nome": "Chevrolet Corvette Z06",
+    "tipo": "esportivos",
+    "descricao": "Desc Chevrolet Corvette Z06",
+    "urlFoto": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/esportivos/Chevrolet_Corvette_Z06.png",
+    "urlVideo": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/esportivos/chevrolet_corvette.mp4",
+    "latitude": "-23.564224",
+    "longitude": "-46.653156"
+  },
+  {
+    "id": 12391,
+    "nome": "BMW M5",
+    "tipo": "esportivos",
+    "descricao": "Desc BMW M5",
+    "urlFoto": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/esportivos/BMW.png",
+    "urlVideo": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/esportivos/bmw-m5.mp4",
+    "latitude": "-23.564224",
+    "longitude": "-46.653156"
+  },
+  {
+    "id": 12401,
+    "nome": "Renault Megane RS Trophy",
+    "tipo": "esportivos",
+    "descricao": "Desc Renault Megane RS Trophy",
+    "urlFoto": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/esportivos/Renault_Megane_Trophy.png",
+    "urlVideo": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/esportivos/renault_megane.mp4",
+    "latitude": "-23.564224",
+    "longitude": "-46.653156"
+  },
+  {
+    "id": 12411,
+    "nome": "Maserati Grancabrio Sport",
+    "tipo": "esportivos",
+    "descricao": "Desc Maserati Grancabrio Sport",
+    "urlFoto": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/esportivos/Maserati_Grancabrio_Sport.png",
+    "urlVideo": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/esportivos/renault_megane.mp4",
+    "latitude": "-23.564224",
+    "longitude": "-46.653156"
+  },
+  {
+    "id": 12421,
+    "nome": "McLAREN MP4-12C",
+    "tipo": "esportivos",
+    "descricao": "Desc McLAREN MP4-12C",
+    "urlFoto": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/esportivos/McLAREN.png",
+    "urlVideo": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/esportivos/mcLaren.mp4",
+    "latitude": "-23.564224",
+    "longitude": "-46.653156"
+  },
+  {
+    "id": 12431,
+    "nome": "MERCEDES-BENZ C63 AMG",
+    "tipo": "esportivos",
+    "descricao": "Desc MERCEDES-BENZ C63 AMG",
+    "urlFoto": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/esportivos/MERCEDES_BENZ_AMG.png",
+    "urlVideo": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/esportivos/mercedes.mp4",
+    "latitude": "-23.564224",
+    "longitude": "-46.653156"
+  },
+  {
+    "id": 12441,
+    "nome": "Bugatti Veyron",
+    "tipo": "luxo",
+    "descricao": "Desc Bugatti Veyron",
+    "urlFoto": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/luxo/Bugatti_Veyron.png",
+    "urlVideo": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/luxo/bugatti_veyron.mp4",
+    "latitude": "-23.564224",
+    "longitude": "-46.653156"
+  },
+  {
+    "id": 12451,
+    "nome": "Ferrari Enzo",
+    "tipo": "luxo",
+    "descricao": "Desc Ferrari Enzo",
+    "urlFoto": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/luxo/Ferrari_Enzo.png",
+    "urlVideo": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/luxo/ferrari_enzo.mp4",
+    "latitude": "-23.564224",
+    "longitude": "-46.653156"
+  },
+  {
+    "id": 12461,
+    "nome": "Lamborghini Reventon",
+    "tipo": "luxo",
+    "descricao": "Desc Lamborghini Reventon",
+    "urlFoto": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/luxo/Lamborghini_Reventon.png",
+    "urlVideo": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/luxo/lamborghini _reventon.mp4",
+    "latitude": "-23.564224",
+    "longitude": "-46.653156"
+  },
+  {
+    "id": 12471,
+    "nome": "Leblanc Mirabeau",
+    "tipo": "luxo",
+    "descricao": "Desc Leblanc Mirabeau",
+    "urlFoto": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/luxo/Leblanc_Mirabeau.png",
+    "urlVideo": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/luxo/leblanc_mirabeau.mp4",
+    "latitude": "-23.564224",
+    "longitude": "-46.653156"
+  },
+  {
+    "id": 12481,
+    "nome": "Shelby Supercars Ultimate",
+    "tipo": "luxo",
+    "descricao": "Desc Shelby Supercars Ultimate",
+    "urlFoto": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/luxo/Shelby_Supercars_Ultimate.png",
+    "urlVideo": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/luxo/shelby.mp4",
+    "latitude": "-23.564224",
+    "longitude": "-46.653156"
+  },
+  {
+    "id": 12491,
+    "nome": "Pagani Zonda",
+    "tipo": "luxo",
+    "descricao": "Desc Pagani Zonda",
+    "urlFoto": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/luxo/Pagani_Zonda.png",
+    "urlVideo": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/luxo/pagani_zonda.mp4",
+    "latitude": "-23.564224",
+    "longitude": "-46.653156"
+  },
+  {
+    "id": 12501,
+    "nome": "Koenigsegg CCX",
+    "tipo": "luxo",
+    "descricao": "Desc Koenigsegg CCX",
+    "urlFoto": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/luxo/Koenigsegg_CCX.png",
+    "urlVideo": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/luxo/koenigsegg.mp4",
+    "latitude": "-23.564224",
+    "longitude": "-46.653156"
+  },
+  {
+    "id": 12511,
+    "nome": "Mercedes SLR McLaren",
+    "tipo": "luxo",
+    "descricao": "Desc Mercedes SLR McLaren",
+    "urlFoto": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/luxo/Mercedes_McLaren.png",
+    "urlVideo": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/luxo/mclaren_slr.mp4",
+    "latitude": "-23.564224",
+    "longitude": "-46.653156"
+  },
+  {
+    "id": 12521,
+    "nome": "Rolls Royce Phantom",
+    "tipo": "luxo",
+    "descricao": "Desc Rolls Royce Phantom",
+    "urlFoto": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/luxo/Rolls_Royce_Phantom.png",
+    "urlVideo": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/luxo/rolls_royce.mp4",
+    "latitude": "-23.564224",
+    "longitude": "-46.653156"
+  },
+  {
+    "id": 12531,
+    "nome": "Lexus LFA",
+    "tipo": "luxo",
+    "descricao": "Desc Lexus LFA",
+    "urlFoto": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/luxo/Lexus_LFA.png",
+    "urlVideo": "https://s3-sa-east-1.amazonaws.com/videos.livetouchdev.com.br/luxo/lexus.mp4",
+    "latitude": "-23.564224",
+    "longitude": "-46.653156"
+  }
+]

@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "129506316372",
+    "project_id": "flutter-carros-adb96",
+    "storage_bucket": "flutter-carros-adb96.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:129506316372:android:4d41702a8f1a42c0c85dc1",
+        "android_client_info": {
+          "package_name": "br.com.livroandroid.carrosfirestoreweb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "129506316372-d9aagtj16vq85u8rstgeqt6kb0nb5mpk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1x9d7qdWEX4yCbpUIXNlfy-UhPdqYTdE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "129506316372-d9aagtj16vq85u8rstgeqt6kb0nb5mpk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:129506316372:android:4253c6e06386c0ebc85dc1",
+        "android_client_info": {
+          "package_name": "br.com.udemy.carros"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "129506316372-d9aagtj16vq85u8rstgeqt6kb0nb5mpk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1x9d7qdWEX4yCbpUIXNlfy-UhPdqYTdE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "129506316372-d9aagtj16vq85u8rstgeqt6kb0nb5mpk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
