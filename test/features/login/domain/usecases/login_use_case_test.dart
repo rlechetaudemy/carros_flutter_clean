@@ -26,4 +26,19 @@ void main() {
     expect(result.data, user);
     verify(userLocalRepository.save(user));
   });
+
+  test("should return error", () async {
+    // arrange
+    final user = getMockUser();
+    final model = LoginModel();
+    when(repository.login(model)).thenAnswer((_) async => Result.failure(TimeoutFailure()));
+
+    // act
+    final result = await loginUseCase(model);
+
+    // assert
+    expect(result.isSuccess, false);
+    expect(result.error, isA<TimeoutFailure>());
+    verifyNever(userLocalRepository.save(user));
+  });
 }

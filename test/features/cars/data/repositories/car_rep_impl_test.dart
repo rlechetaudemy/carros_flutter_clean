@@ -7,7 +7,7 @@ void main() {
   setUp(() {
     initGetItTest();
 
-    api = new MockCarApi();
+    api = MockCarApi();
     repository = CarRepositoryImpl(api);
   });
 

@@ -11,9 +11,9 @@ void main() {
     api = CarApiImpl(httpClient);
   });
 
-  void setUpHttp(String url, String response, int statusCode) {
+  void setUpHttp(String url, String body, int statusCode) {
     var uri = Uri.parse(url);
-    when(httpClient.get(uri)).thenAnswer((_) async => http.Response(response, statusCode));
+    when(httpClient.get(uri)).thenAnswer((_) async => http.Response(body, statusCode));
   }
 
   group("get cars list", () {
