@@ -10,7 +10,7 @@ void main() {
     initGetItTest();
 
     repository = MockLoginRepository();
-    loginUseCase = LoginUseCase(repository, MockUserLocalRepository());
+    loginUseCase = LoginUseCaseImpl(repository, MockUserLocalRepository());
     viewModel = LoginViewModel(loginUseCase);
     loginView = MockLoginView();
     viewModel.view = loginView;

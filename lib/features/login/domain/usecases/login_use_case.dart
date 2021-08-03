@@ -1,18 +1,22 @@
 import 'package:app/imports.dart';
 
-class LoginUseCase {
-  final UserLocalRepository userRepository;
+abstract class LoginUseCase {
+  Future<Result<User>> call(LoginModel model);
+}
+
+class LoginUseCaseImpl implements LoginUseCase {
+  final UserLocalRepository userLocalRepository;
 
   final LoginRepository loginRepository;
 
-  LoginUseCase(this.loginRepository, this.userRepository);
+  LoginUseCaseImpl(this.loginRepository, this.userLocalRepository);
 
   Future<Result<User>> call(LoginModel model) async {
     Result<User> result = await loginRepository.login(model);
 
     if(result.isSuccess) {
       User user = result.data;
-      userRepository.save(user);
+      userLocalRepository.save(user);
     }
 
     return result;

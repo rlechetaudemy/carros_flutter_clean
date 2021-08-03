@@ -10,7 +10,7 @@ void main() {
   setUp(() {
     repository = MockLoginRepository();
     userLocalRepository = MockUserLocalRepository();
-    loginUseCase = LoginUseCase(repository, userLocalRepository);
+    loginUseCase = LoginUseCaseImpl(repository, userLocalRepository);
   });
 
   test("should login", () async {

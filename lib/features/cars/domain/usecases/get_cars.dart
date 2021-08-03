@@ -5,9 +5,7 @@ class GetCars {
 
   GetCars(this.repository);
 
-  Future<Result<List<Car>>> call() async {
-    return repository.getCars();
-  }
+  Future<Result<List<Car>>> call() => repository.getCars();
 }
 
 class GetCarById {
@@ -15,7 +13,5 @@ class GetCarById {
 
   GetCarById(this.repository);
 
-  Future<Result<Car>> call(int id) async {
-    return repository.getCarById(id);
-  }
+  Future<Result<Car>> call(int id) => repository.getCarById(id);
 }

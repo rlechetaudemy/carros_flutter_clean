@@ -4,7 +4,7 @@ import 'package:matcher/matcher.dart' as matcher;
 import '../../../../test_imports.dart';
 
 void main() {
-  late LoginApi dataSource;
+  late LoginApi loginApi;
   late MockClient httpClient;
 
   final String login = "a@a.com";
@@ -12,21 +12,29 @@ void main() {
 
   setUp(() {
     httpClient = MockClient();
-    dataSource = LoginApiImpl(httpClient);
+    loginApi = LoginApiImpl(httpClient);
   });
 
-  void mockHttp(String response, int statusCode) {
-    when(httpClient.post(Uri.parse(LoginApi.URL),
-            body: anyNamed('body'), headers: anyNamed('headers')))
-        .thenAnswer((_) async => http.Response(response, statusCode));
+  void mockHttp(String body, int statusCode) {
+    when(
+      httpClient.post(
+        Uri.parse(LoginApi.URL),
+        body: anyNamed('body'),
+        headers: anyNamed('headers'),
+      ),
+    ).thenAnswer(
+      (_) async => http.Response(body, statusCode),
+    );
   }
 
-  test("should call http.post with correct values", () async {
+  test(
+    "should call http.post with correct values",
+    () async {
       // arrange
-      mockHttp(fixture('login.json'), 200);
+      mockHttp(mockFile('login.json'), 200);
 
       // act
-      await dataSource.login(login, pwd);
+      await loginApi.login(login, pwd);
 
       // assert
       verify(httpClient.post(
@@ -40,13 +48,12 @@ void main() {
   test(
     'should return User when the response code is 200 (success)',
     () async {
-
       // arrange
       final user = getMockUser();
-      mockHttp(fixture('login.json'), 200);
+      mockHttp(mockFile('login.json'), 200);
 
       // act
-      final result = await dataSource.login(login, pwd);
+      final result = await loginApi.login(login, pwd);
 
       // assert
       expect(result, user);
@@ -57,13 +64,16 @@ void main() {
     'should throw a ApiMessageException when the response code is 401 (Unauthorized)',
     () async {
       // arrange
-      mockHttp(fixture('login_401.json'), 401);
+      mockHttp(mockFile('login_401.json'), 401);
 
       // act
-      final call = dataSource.login;
+      final call = loginApi.login;
 
       // assert
-      expect(() => call(login, pwd), throwsA(matcher.TypeMatcher<ApiMessageException>()));
+      expect(
+        () => call(login, pwd),
+        throwsA(matcher.TypeMatcher<ApiMessageException>()),
+      );
     },
   );
 
@@ -74,10 +84,13 @@ void main() {
       mockHttp("error", 500);
 
       // act
-      final call = dataSource.login;
+      final call = loginApi.login;
 
       // assert
-      expect(() => call(login, pwd), throwsA(matcher.TypeMatcher<ApiException>()));
+      expect(
+        () => call(login, pwd),
+        throwsA(matcher.TypeMatcher<ApiException>()),
+      );
     },
   );
 }

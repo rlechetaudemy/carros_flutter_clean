@@ -32,7 +32,7 @@ void initGetIt({required String env}) {
 
 void useCase() {
   get
-    ..registerFactory(() => LoginUseCase(get(), get()))
+    ..registerFactory(() => LoginUseCaseImpl(get(), get()))
     ..registerFactory(() => LogoutUseCase(get()))
     ..registerFactory(() => GetCars(get()))
     ..registerFactory(() => GetCarById(get()));

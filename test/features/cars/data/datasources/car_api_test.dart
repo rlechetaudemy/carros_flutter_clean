@@ -21,7 +21,7 @@ void main() {
       'should return list of cars when the response code is 200 (success)',
       () async {
         // arrange
-        setUpHttp(CarApi.URL, fixture('cars.json'), 200);
+        setUpHttp(CarApi.URL, mockFile('cars.json'), 200);
 
         // act
         final result = await api.getCars();
@@ -51,7 +51,7 @@ void main() {
         // arrange
         Car car = getMockCar();
 
-        String json = fixture("car.json");
+        String json = mockFile("car.json");
         String url = "${CarApi.URL}/1";
         setUpHttp(url, json, 200);
 

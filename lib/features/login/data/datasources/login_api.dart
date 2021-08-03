@@ -10,7 +10,6 @@ abstract class LoginApi {
   Future<User> login(String login, String password);
 }
 
-// TODO LoginDataSource ?
 class LoginApiImpl implements LoginApi {
   final Client http;
 
@@ -19,11 +18,11 @@ class LoginApiImpl implements LoginApi {
   Future<User> login(String login, String password) async {
     Map params = {"username": login, "password": password};
 
-    String s = json.encode(params);
+    String body = json.encode(params);
     print(LoginApi.URL);
-    print(">> $s");
+    print(">> $body");
 
-    var response = await http.post(Uri.parse(LoginApi.URL), body: s, headers: {
+    var response = await http.post(Uri.parse(LoginApi.URL), body: body, headers: {
       'Content-Type': 'application/json',
     });
 
@@ -37,12 +36,13 @@ class LoginApiImpl implements LoginApi {
 
     if (response.statusCode == 401) {
       Map mapResponse = json.decode(response.body);
-      // 401 = { "error": "Login incorreto" }
+      // 401 Unauthorized = { "error": "Login incorreto" }
       String msg = mapResponse["error"];
 
       throw ApiMessageException(statusCode: response.statusCode, msg: msg);
     }
 
+    // 500, etc ?
     throw ApiException.fromResponse(response);
   }
 }
