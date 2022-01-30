@@ -1,2 +1,4 @@
 /coverage-report.sh
 /coverage/html/
+/.fvm/flutter_sdk/
+.idea/

@@ -49,7 +49,19 @@ void main() {
     expect(list, isEmpty);
   });
 
-  test('should show loading correctly', () async {
+  test("should show error on fail", () async {
+    // arrange
+    mockFailure(TimeoutFailure());
+
+    // act
+    await viewModel.fetch();
+
+    // assert
+    expect(viewModel.state.value, isNull);
+    expect(viewModel.state.error?.msg, R.strings.msgTimeoutException);
+  });
+
+  test('should show loading correctly when success', () async {
     // arrange
     List<Car> cars = getMockCars();
     mockSuccess(cars);
@@ -63,15 +75,16 @@ void main() {
     expectLater(viewModel.state.stream, emitsInOrder([v1, v2]));
   });
 
-  test("should show error on fail", () async {
+  test('should show loading correctly when error', () async {
     // arrange
-    mockFailure(ApiFailure());
+    mockFailure(TimeoutFailure());
 
     // act
     await viewModel.fetch();
 
     // assert
-    expect(viewModel.state.value, isNull);
-    expect(viewModel.state.error?.msg, R.strings.msgApiFailure);
+    final v1 = ViewState<List<Car>>.loading(true);
+    final v2 = ViewState<List<Car>>.error(ErrorState.create(TimeoutFailure()));
+    expectLater(viewModel.state.stream, emitsInOrder([v1, v2]));
   });
 }

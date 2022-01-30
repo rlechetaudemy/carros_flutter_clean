@@ -45,6 +45,8 @@ class CarApiImpl implements CarApi {
       Map<String, dynamic> map = jsonDecode(response.body);
 
       return Car.fromMap(map);
+    } else if (response.statusCode == 404) {
+      throw NotFoundException();
     }
 
     throw ApiException.fromResponse(response);

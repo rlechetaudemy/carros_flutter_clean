@@ -11,7 +11,9 @@ final get = GetIt.instance;
 
 void initGetIt({required String env}) {
   // Singletons
-  get..registerSingleton(AppState())..registerSingleton(AppRouter());
+  get
+    ..registerSingleton(AppState())
+    ..registerSingleton(AppRouter());
 
   // Infra
   get
@@ -32,7 +34,7 @@ void initGetIt({required String env}) {
 
 void useCase() {
   get
-    ..registerFactory(() => LoginUseCaseImpl(get(), get()))
+    ..registerFactory<LoginUseCase>(() => LoginUseCaseImpl(get(), get()))
     ..registerFactory(() => LogoutUseCase(get()))
     ..registerFactory(() => GetCars(get()))
     ..registerFactory(() => GetCarById(get()));

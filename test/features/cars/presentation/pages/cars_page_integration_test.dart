@@ -84,11 +84,13 @@ void main() {
 
     // loading
     final loading = find.byType(CircularProgressIndicator);
+    final listView = find.byType(ListView);
     expect(loading, findsOneWidget);
     await tester.pump();
 
     // assert
     expect(loading, findsNothing);
+    expect(listView, findsNothing);
     expect(find.text(R.strings.cars_list_is_empty), findsOneWidget);
   });
 

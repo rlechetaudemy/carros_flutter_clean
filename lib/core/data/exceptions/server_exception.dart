@@ -17,3 +17,7 @@ class ApiMessageException implements Exception {
 
   ApiMessageException({required this.statusCode, required this.msg});
 }
+
+class NotFoundException implements Exception {
+
+}

@@ -48,36 +48,37 @@ class _CarsPageState extends State<CarsPage> {
     );
   }
 
-  /*
+
   /// Para demonstração:
   /// Implementação sem o widget StreamViewState
-  _body() {
-    return StreamBuilder(
-      stream: viewModel.state.stream,
-      initialData: viewModel.state,
-      builder: (context, snapshot) {
-        final state = snapshot.data;
-
-        if (state.loading) {
-          // Loading
-          return Center(
-            child: CircularProgressIndicator(),
-          );
-        }
-
-        if (state.error != null) {
-          return ErrorView(state.error);
-        }
-
-        List<Car> list = state.value;
-
-        return RefreshIndicator(
-          onRefresh: _onRefresh,
-          child: _listView(list),
-        );
-      },
-    );
-  }*/
+  // _body() {
+  //   return StreamBuilder(
+  //     stream: viewModel.state.stream,
+  //     initialData: viewModel.state,
+  //     builder: (context, snapshot) {
+  //       final state = snapshot.data as ViewState<List<Car>>;
+  //
+  //       if (state.loading) {
+  //         // Loading
+  //         return Center(
+  //           child: CircularProgressIndicator(),
+  //         );
+  //       }
+  //
+  //       var error = state.error;
+  //       if (error != null) {
+  //         return ErrorView(error.msg);
+  //       }
+  //
+  //       List<Car> list = state.value!;
+  //
+  //       return RefreshIndicator(
+  //         onRefresh: _onRefresh,
+  //         child: _listView(list),
+  //       );
+  //     },
+  //   );
+  // }
 
   _listView(List<Car> cars) {
     return Container(
@@ -114,9 +115,7 @@ class _CarsPageState extends State<CarsPage> {
 
   // void _onClickCar(Car c) => push("/cars/car", args: c);
 
-  Future<void> _onRefresh() {
-    return viewModel.fetch();
-  }
+  Future<void> _onRefresh() => viewModel.fetch();
 
   @override
   void dispose() {

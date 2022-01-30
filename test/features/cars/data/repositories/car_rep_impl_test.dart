@@ -25,6 +25,7 @@ void main() {
       Result result = await repository.getCars();
 
       // assert
+      expect(result.isSuccess, true);
       expect(result.data, cars);
     });
 
@@ -38,6 +39,7 @@ void main() {
         Result result = await repository.getCars();
 
         // assert
+        expect(result.isSuccess, false);
         expect(result.error, isA<ApiFailure>());
       },
     );

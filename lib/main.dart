@@ -35,9 +35,10 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       navigatorKey: navigatorKey,
       theme: ThemeData(
-          primarySwatch: Colors.blue,
-          brightness: Brightness.light,
-          scaffoldBackgroundColor: Colors.white),
+        primarySwatch: Colors.blue,
+        brightness: Brightness.light,
+        scaffoldBackgroundColor: Colors.white,
+      ),
       onGenerateRoute: appRouter.onGenerateRoute,
     );
   }

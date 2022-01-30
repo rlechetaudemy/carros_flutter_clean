@@ -64,6 +64,18 @@ void main() {
     );
 
     test(
+      'should throw a NotFoundException when the response code is 404',
+          () async {
+        // arrange
+        String url = "${CarApi.URL}/100999";
+        setUpHttp(url, "not_found", 404);
+
+        // assert
+        expect(() => api.getCarById(100999), throwsA(TypeMatcher<NotFoundException>()));
+      },
+    );
+
+    test(
       'should throw a ApiException when the response code is different than 200',
       () async {
         // arrange

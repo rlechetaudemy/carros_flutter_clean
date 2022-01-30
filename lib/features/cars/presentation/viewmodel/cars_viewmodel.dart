@@ -7,9 +7,9 @@ class CarsViewModel {
 
   final state = ViewState<List<Car>>();
 
-  // Future<void> fetch() => state.update(() => _getCars());
+  Future<void> fetch() => state.update(() => _getCars());
 
-  Future<void> fetch() async {
+  /*Future<void> fetch() async {
     if(await isOffline()) {
       state.error = ErrorState.noInternet();
       return;
@@ -23,7 +23,7 @@ class CarsViewModel {
       success: (data) => state.value = data,
       failure: (error) => state.error = ErrorState.create(error)
     );
-  }
+  }*/
 
   void close() {
     state.close();

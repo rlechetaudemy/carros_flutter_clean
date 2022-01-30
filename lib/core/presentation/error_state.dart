@@ -28,6 +28,8 @@ class ErrorState extends Equatable {
       this.msg = R.strings.msgApiFailure;
     } else if(error is MessageFailure) {
       this.msg = error.msg;
+    } else if(error is TimeoutFailure) {
+      this.msg = R.strings.msgTimeoutException;
     } else if(error is Failure) {
       this.msg = R.strings.msgGenericError;
     } else if (error is TimeoutException) {
